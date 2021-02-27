@@ -1,0 +1,31 @@
+#arguments
+def my_fun(*name): #if u dont know how many arguments to be passed..specify with *
+    for x in name:
+        print(x)
+my_fun("raju","prathyu",'avi');
+
+
+#keyword arguments
+def my_func(**kw):
+    for x in kw:
+        print(x)
+    #print("hello "+kw['b'])
+my_func(a='raj',b='prathyu',c="avi")
+
+
+#passing list
+def food_list(food):
+    for x in food:
+        print(x)
+fruits=['apple','banana','mango']
+food_list(fruits)
+
+
+#recurison
+def fact(n):
+    if n==0 or n==1:
+        return 1
+    else:
+        return n*fact(n-1)
+n=6
+print(fact(n))
