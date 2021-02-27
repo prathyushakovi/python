@@ -1,0 +1,25 @@
+class myclass: #class
+    x=5
+p=myclass()  #obj
+print(p.x)
+
+
+
+
+class person:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+p=person('prathyu',20)
+print(p.name)
+print(p.age)
+
+
+class person:
+    def __init__(self,name,age): #it is not mandatory to keep a name as self,,,you can call it whatevr u like..but it shoud be a first parameter
+        self.name=name
+        self.age=age
+    def myfun(self):
+        print("hii"+self.name)
+p=person('prathyu',20)
+p.myfun()
